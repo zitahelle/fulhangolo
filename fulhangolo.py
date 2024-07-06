@@ -1,5 +1,5 @@
 
-import winsound, random
+import winsound, random, os
 from playsound import playsound
 from tkinter import *
 
@@ -9,6 +9,7 @@ hang_neve_be = ["A0", "Bb0", "B0", "C1", "Db1", "D1", "Eb1", "E1", "F1", "Gb1", 
 frekvencia = [28, 29, 31, 33, 35, 37, 39, 41, 44, 46, 49, 52, 55, 58, 62, 65, 69, 73, 78, 82, 87, 93, 98, 104, 110, 117, 123, 131, 139, 147, 156, 165, 175, 185, 196, 208, 220, 233, 247, 262, 277, 294, 311, 330, 349, 370, 392, 415, 440, 466, 494, 523, 554, 587, 622, 659, 698, 740, 784, 831, 880, 932, 988, 1047, 1109, 1175, 1245, 1319, 1397, 1480, 1568, 1661, 1760, 1865, 1976, 2093, 2217, 2349, 2489, 2637, 2794, 2960, 3136, 3322, 3520, 3729, 3951, 4186]
 hangkoz_neve = ["0 - prím", "1 - kis szekund", "2 - nagy szekund", "3 - kis terc", "4 - nagy terc", "5 - tiszta kvart", "6 - bővített kvart = tritonus = szűkített kvint", "7 - tiszta kvint", "8 - kis szext", "9 - nagy szext", "10 - kis szeptim", "11 - nagy szeptim", "12 - oktáv", "13 - kis nóna", "14 - nagy nóna", "15 - kis decima", "16 - nagy decima", "17 - tiszta undecima", "18 - bővített undecima = szűkített duodecima", "19 - tiszta duodecima", "20 - kis tredecima", "21 - nagy tredecima"]
 
+#Apáé
 #abszolut_also = 25 #!!! A4-től két oktáv mindkét irányban; a minimum 1
 #abszolut_felso = 73 #!!! A4-től két oktáv mindkét irányban; a maximum 88
 #abszolut_index_lista = list(range(abszolut_also - 1, abszolut_felso))
@@ -17,6 +18,7 @@ hangkoz_neve = ["0 - prím", "1 - kis szekund", "2 - nagy szekund", "3 - kis ter
 #hangkoz_sz_elso_hang_index_lista = list(range(hangkoz_sz_elso_hang_also - 1, hangkoz_sz_elso_hang_felso))
 #hangkoz_sz_hangkoz_lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] #!!! egy oktáv; a teljes sor [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 
+#Danié
 abszolut_index_lista = [48, 50, 51, 53, 55, 56, 58, 60, 62, 63, 65, 67] #!!! A4 - E6, csak fehér billentyűk
 hangkoz_sz_elso_hang_index_lista = [48, 50, 51, 53, 55, 56, 58, 60, 62, 63, 65, 67] #!!! A4 - E6, csak fehér billentyűk
 hangkoz_sz_hangkoz_lista = [0, 4, 7, 12] #!!! prím, nagy terc, tiszta kvint, oktáv
@@ -51,6 +53,7 @@ tippelt = 0
 talalt = 0
 szazalek = 0
 
+konyvtar = os.getcwd()
 
 
 def ilyet():
@@ -80,7 +83,7 @@ def ilyet():
        if hangszer_text == "generalt":
           winsound.Beep(frekvencia[hang_indexe], 1000)
        else:
-          playsound("C:/Zita/Programming/Python/fulhangolo/zene/sounds/piano_" + str(zongorabillentyu_szama[hang_indexe]).rjust(2, "0") + ".mp3")
+          playsound(konyvtar + "/zene/sounds/piano_" + str(zongorabillentyu_szama[hang_indexe]).rjust(2, "0") + ".mp3")
     else:
        valaszto.pack_forget()
 
@@ -106,8 +109,8 @@ def ilyet():
           winsound.Beep(frekvencia[elso_hang_indexe], 1000)
           winsound.Beep(frekvencia[masodik_hang_indexe], 1000)
        else:
-          playsound("C:/Zita/Programming/Python/fulhangolo/zene/sounds/piano_" + str(zongorabillentyu_szama[elso_hang_indexe]).rjust(2, "0") + ".mp3")
-          playsound("C:/Zita/Programming/Python/fulhangolo/zene/sounds/piano_" + str(zongorabillentyu_szama[masodik_hang_indexe]).rjust(2, "0") + ".mp3")
+          playsound(konyvtar + "/zene/sounds/piano_" + str(zongorabillentyu_szama[elso_hang_indexe]).rjust(2, "0") + ".mp3")
+          playsound(konyvtar + "/zene/sounds/piano_" + str(zongorabillentyu_szama[masodik_hang_indexe]).rjust(2, "0") + ".mp3")
 
 
 
@@ -199,15 +202,15 @@ def jatsszd_ujra_abszolut():
        if hangszer_text == "generalt":
           winsound.Beep(frekvencia[hang_indexe], 1000)
        else:
-          playsound("C:/Zita/Programming/Python/fulhangolo/zene/sounds/piano_" + str(zongorabillentyu_szama[hang_indexe]) + ".mp3")
+          playsound(konyvtar + "/zene/sounds/piano_" + str(zongorabillentyu_szama[hang_indexe]) + ".mp3")
 
 def jatsszd_ujra_hangkoz_sz():
        if hangszer_text == "generalt":
           winsound.Beep(frekvencia[elso_hang_indexe], 1000)
           winsound.Beep(frekvencia[masodik_hang_indexe], 1000)
        else:
-          playsound("C:/Zita/Programming/Python/fulhangolo/zene/sounds/piano_" + str(zongorabillentyu_szama[elso_hang_indexe]) + ".mp3")
-          playsound("C:/Zita/Programming/Python/fulhangolo/zene/sounds/piano_" + str(zongorabillentyu_szama[masodik_hang_indexe]) + ".mp3")
+          playsound(konyvtar + "/zene/sounds/piano_" + str(zongorabillentyu_szama[elso_hang_indexe]) + ".mp3")
+          playsound(konyvtar + "/zene/sounds/piano_" + str(zongorabillentyu_szama[masodik_hang_indexe]) + ".mp3")
 
 def inkabb_mast_gyakorlok_abszolut():
     global tippelt, talalt, szazalek

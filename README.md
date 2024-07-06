@@ -1,1 +1,1 @@
-This is a little app that helps you tune your ear. You can chose between guessing absolute sounds or guessing distances between sounds. Currently the app is set to very easy but by tweaking the first few lines you can make it very hard.
+This is a little app (created for my family) that helps you tune your ear. You can chose between guessing absolute sounds or guessing distances between sounds. Currently the app is set to very easy but by tweaking the first few lines you can make it harder and harder as you learn.

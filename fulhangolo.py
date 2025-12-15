@@ -11,6 +11,7 @@ hangkoz_neve = ["0 - prím", "1 - kis szekund", "2 - nagy szekund", "3 - kis ter
 
 #Apáé
 #probalgatom a githubot meg egyszer
+#most meg fogok probalni ellentmondast tenni bele
 #abszolut_also = 25 #!!! A4-től két oktáv mindkét irányban; a minimum 1
 #abszolut_felso = 73 #!!! A4-től két oktáv mindkét irányban; a maximum 88
 #abszolut_index_lista = list(range(abszolut_also - 1, abszolut_felso))

@@ -10,7 +10,7 @@ frekvencia = [28, 29, 31, 33, 35, 37, 39, 41, 44, 46, 49, 52, 55, 58, 62, 65, 69
 hangkoz_neve = ["0 - prím", "1 - kis szekund", "2 - nagy szekund", "3 - kis terc", "4 - nagy terc", "5 - tiszta kvart", "6 - bővített kvart = tritonus = szűkített kvint", "7 - tiszta kvint", "8 - kis szext", "9 - nagy szext", "10 - kis szeptim", "11 - nagy szeptim", "12 - oktáv", "13 - kis nóna", "14 - nagy nóna", "15 - kis decima", "16 - nagy decima", "17 - tiszta undecima", "18 - bővített undecima = szűkített duodecima", "19 - tiszta duodecima", "20 - kis tredecima", "21 - nagy tredecima"]
 
 #Apáé
-#probalgatom a githubot
+#probalgatom a githubot meg egyszer
 #abszolut_also = 25 #!!! A4-től két oktáv mindkét irányban; a minimum 1
 #abszolut_felso = 73 #!!! A4-től két oktáv mindkét irányban; a maximum 88
 #abszolut_index_lista = list(range(abszolut_also - 1, abszolut_felso))
@@ -370,3 +370,4 @@ valaszto.pack(fill = "both", expand = True, padx = 10, pady = 10)
 
 
 fulhangolo.mainloop()
+

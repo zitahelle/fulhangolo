@@ -9,7 +9,6 @@ hang_neve_be = ["A0", "Bb0", "B0", "C1", "Db1", "D1", "Eb1", "E1", "F1", "Gb1", 
 frekvencia = [28, 29, 31, 33, 35, 37, 39, 41, 44, 46, 49, 52, 55, 58, 62, 65, 69, 73, 78, 82, 87, 93, 98, 104, 110, 117, 123, 131, 139, 147, 156, 165, 175, 185, 196, 208, 220, 233, 247, 262, 277, 294, 311, 330, 349, 370, 392, 415, 440, 466, 494, 523, 554, 587, 622, 659, 698, 740, 784, 831, 880, 932, 988, 1047, 1109, 1175, 1245, 1319, 1397, 1480, 1568, 1661, 1760, 1865, 1976, 2093, 2217, 2349, 2489, 2637, 2794, 2960, 3136, 3322, 3520, 3729, 3951, 4186]
 hangkoz_neve = ["0 - prím", "1 - kis szekund", "2 - nagy szekund", "3 - kis terc", "4 - nagy terc", "5 - tiszta kvart", "6 - bővített kvart = tritonus = szűkített kvint", "7 - tiszta kvint", "8 - kis szext", "9 - nagy szext", "10 - kis szeptim", "11 - nagy szeptim", "12 - oktáv", "13 - kis nóna", "14 - nagy nóna", "15 - kis decima", "16 - nagy decima", "17 - tiszta undecima", "18 - bővített undecima = szűkített duodecima", "19 - tiszta duodecima", "20 - kis tredecima", "21 - nagy tredecima"]
 
-#Apáé
 #most meg fogok probalni ellentmondast tenni bele
 #abszolut_also = 25 #!!! A4-től két oktáv mindkét irányban; a minimum 1
 #abszolut_felso = 73 #!!! A4-től két oktáv mindkét irányban; a maximum 88
